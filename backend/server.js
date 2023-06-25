@@ -30,7 +30,7 @@ app.use(cors());
 app.use(morgan("dev"));
 
 //ROUTES
-app.use(`${process.env.BASE_URL}/api/v1/message`, contactMessageRoutes);
+app.use("/api/v1/message", contactMessageRoutes);
 
 //PORT
 const PORT = process.env.PORT || 8080;
