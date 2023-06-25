@@ -1,0 +1,70 @@
+.__career {
+  h2 {
+    font-size: 30px;
+    font-weight: 800 !important;
+    text-transform: uppercase;
+    margin: auto auto;
+    text-align: center;
+    letter-spacing: 0.8px;
+    color: #000000;
+    text-shadow: 1px 2px #ffffff;
+  }
+
+  h3 {
+    font-size: 14px;
+    color: #ffffff99;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    line-height: 1.5;
+    padding: 15px 15px 60px 15px;
+  }
+
+  h5 {
+    font-weight: 800;
+    padding-bottom: 15px;
+    color: #ffffff;
+  }
+
+  h6 {
+    color: #ffffff;
+    letter-spacing: 0.8px;
+  }
+
+  a {
+    background-color: #ffffff;
+    padding: 10px;
+    margin: 15px;
+    color: #000000;
+    border-radius: 10px;
+    border: 1px solid #ffffff99;
+    text-decoration: none;
+    font-weight: 600;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    &:hover {
+      background-color: transparent;
+      color: #ffffff;
+      border: 1px solid #ffcc1b;
+    }
+  }
+
+  .__content {
+    background-color: #ffffff11;
+    box-shadow: rgba(255, 204, 27, 0.7) 0px 1px 4px 0px,
+      rgba(255, 204, 27, 0.5) 0px 2px 16px 0px;
+  }
+}
+
+// RESPONSIVE
+@media only screen and (max-width: 497px) {
+  .__career {
+    .__content {
+      .__btn {
+        display: flex;
+        flex-direction: column;
+      }
+    }
+  }
+}
