@@ -45,13 +45,16 @@ function ContactUs() {
         return toast.warning("Please Provide Required (*) Fields");
       }
       dispatch(showLoading());
-      const { data } = await axios.post("/api/v1/message/contact", {
-        fullName,
-        email,
-        contact,
-        service: formattedData,
-        message,
-      });
+      const { data } = await axios.post(
+        "https://it4s.onrender.com/api/v1/message/contact",
+        {
+          fullName,
+          email,
+          contact,
+          service: formattedData,
+          message,
+        }
+      );
       dispatch(hideLoading());
       if (data.success) {
         toast.success("Message Send Successfully");
